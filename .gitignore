@@ -1,4 +1,6 @@
 .vscode/
 .ipynb_checkpoints/
 __pycache__/
+target/
 .DS_Store
+Cargo.lock
