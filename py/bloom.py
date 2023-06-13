@@ -14,8 +14,7 @@ def init(num_hash_functions) -> BloomFilterConfig:
     hash_fns_seed = []
     for _ in range(num_hash_functions):
         seed: int = random.randint(100, 1000000)
-        if seed not in hash_fns_seed:
-            hash_fns_seed.append(seed)
+        hash_fns_seed.append(seed)
 
     return BloomFilterConfig(hash_fns_seed=hash_fns_seed)
 
